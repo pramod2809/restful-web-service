@@ -1,15 +1,20 @@
 package com.rest.webservice.restfulwebservice.user;
 
-import java.util.Date;
-import java.util.List;
-import javax.persistence.*;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+import java.util.Date;
+import java.util.List;
+
 @ApiModel(description="All details about the user.")
 @Entity
+//user Entity
 public class User {
 
     @Id
